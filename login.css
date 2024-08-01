@@ -1,0 +1,101 @@
+/* FONTS */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@400&display=swap&family=kanit:wght@400&display=swap'); */
+
+
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ADC3D8;
+    background-color: #080433;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #080433;
+    /* border: 2px solid white; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    /* align-items: center; */
+}
+
+/* Top of the Login */
+#page_header {
+    color: #ADC3D8;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+form {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    /* background-color: darkgreen; */
+}
+
+.login_inputs_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input_label {
+    color: #ADC3D8;
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    font-family: 'kanit', sans-serif;
+}
+
+.input_field {
+    background-color: #ADC3D8;
+    border: none;
+    border-radius: 2px;
+    height: 3em;
+    font-family: 'kanit', sans-serif;
+    font-size: 1.2rem;
+    color: #080433;
+}
+
+#login_button {
+    background-color: #080433;
+    color: #ADC3D8;
+    border: 2px solid #ADC3D8;
+    border-radius: 5px;
+    /* height: 2em; */
+    padding: .7em 1em .7em 1em;
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#google_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: #080433;
+    border: none;
+    color: #ADC3D8;
+    font-size: 1.2rem;
+    margin-top: 4em;
+    cursor: pointer;
+    padding: 0 6em 0 6em;
+}
+
+#google_img {
+    width: 5em;
+}

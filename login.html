@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow App</title>
+
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+    <main>
+        <label id="page_header">
+            <img src="./workflow.png">
+            <p>Workflow App</p>
+        </label>
+
+        <form action="#">
+
+            <!-- Username and Email Div -->
+            <div class="login_inputs_div">
+                <label class="input_label" for="name">Username or Email</label>
+                <!-- BELOW would be a function to validate either email or username -->
+                <input class="input_field" id="user_email" type="text"/>
+            </div>
+
+            <!-- Password Div -->
+            <div class="login_inputs_div">
+                <label class="input_label" for="password">Password</label>
+                <input class="input_field" id="user_password" type="password"/>
+            </div>
+
+            <!-- Submit Button -->
+            <a href="./index.html" id="login_button" type="submit">Login<a/>
+
+            <!-- Login Google Button -->
+             <button id="google_login">
+                <p>Login with</p>
+                <img id="google_img" src="./google.png" alt="google">
+             </button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
