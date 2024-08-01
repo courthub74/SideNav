@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 nav {
@@ -27,7 +28,7 @@ img {
 }
 
 nav, a {
-    color: white;
+    color: #ADC3D8;
     text-decoration: none;
     cursor: pointer;
 }
@@ -61,8 +62,27 @@ main {
     background-color: #C4C4C4;
     font-size: 1.4rem;
     padding: .5em 1em .5em 0;
+    color: #080E2F;
 }
 
 .links_ {
     font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Each list */
+#freelance_latest {
+    color: darkgreen;
+}
+
+#deliverables_latest {
+    color: darkblue;
+}
+
+#projects_latest {
+    color: darkred;
+}
+
+#back_to_login {
+    color: cornflowerblue;
 }

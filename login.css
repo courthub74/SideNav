@@ -34,7 +34,15 @@ main {
     font-size: 2.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: .5em;
     margin-bottom: 1em;
+}
+
+#workflow_logo {
+    width: 1.5em;
+    height: 1.5em;
+    /* background-color: green; */
 }
 
 form {
@@ -62,7 +70,8 @@ form {
     background-color: #ADC3D8;
     border: none;
     border-radius: 2px;
-    height: 3em;
+    /* height: 3em; */
+    padding: .8em 3em .8em 3em;
     font-family: 'kanit', sans-serif;
     font-size: 1.2rem;
     color: #080433;
