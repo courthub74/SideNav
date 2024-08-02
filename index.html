@@ -10,26 +10,63 @@
 <body>
 
     <nav>
-        <img src="./workflow.png">
-        <a href="#">Calendar</a>
-        <a href="#">Notes</a>
-        <a href="#">Tasks</a>
-        <a href="#">Contracts</a>
-        <a href="#">Payments</a>
+        <div class="nav_logo">
+            <img id="workflow_logo_nav" src="./workflow.png">
+        </div>
+
+        <div class="links_section">
+            <div class="nav_link">
+                <img src="./img/calendar.png" alt="calendar">
+                <a href="#">Calendar</a>
+            </div>
+            <div class="nav_link">
+                <img src="./img/notes.png" alt="notes">
+                <a href="#">Notes</a>
+            </div>
+            <div class="nav_link">
+                <img src="./img/tasks.png" alt="tasks">
+                <a href="#">Tasks</a>
+            </div>
+            <div class="nav_link">
+                <img src="./img/contracts.png" alt="contracts">
+                <a href="#">Contracts</a>
+            </div>
+            <div class="nav_link">
+                <img src="./img/payments.png" alt="payments">
+                <a href="#">Payments</a>
+            </div>
+        </div>
         <a id="back_to_login" class="links_" href="./login.html">Logout</a>
     </nav>
 
     <main>
         <div class="page_list">
             <header>
-                <h1>
-                    <!-- Record the user from the js login file -->
-                    
+                <p>    
                     <p><span id="logged_user">Courtney J</span> you have logged in to the</p>
-                </h1>
-                <h1 id="second_line"><img id="blue_logo" src="./workflow_blue.png"> Workflow App</h1>
+                </p>
+                <p id="second_line"><img id="blue_logo" src="./workflow_blue.png"> Workflow App</>
             </header>
-            <h3 class="recents_">These are your recents</h3>
+
+            <!-- RECENT APPOINTMENTS -->
+             <p class="recents_">Recent Appointments</p>
+             <!-- Grab the latest from the calendar -->
+              <a id="meeting_latest" class="links_" href="#">
+                <p id="meeting_">Sept 8 2024</p>
+                <p>Glammory Meeting</p>
+              </a>
+              <a id="deadline_latest" class="links_" href="#">
+                <p id="deadline_">Oct 15 2024</p>
+                <p>Glammory Website</p>
+              </a>
+              <a id="presentation_latest" class="links_" href="#">
+                <p id="presentation_">Nov 23 2024</p>
+                <p>API Discussion</p>
+              </a>
+              <a class="see_all" href="#">See All +</a>
+
+            <!-- RECENT TASKS -->
+            <p class="recents_">Recent Tasks</p>
             <!-- Grab the latest from each todo List -->
             <a id="freelance_latest" class="links_" href="#">
                 <p id="freelance_">In Freelance</p>
@@ -43,6 +80,11 @@
                 <p id="projects_">In Projects</p>
                 <p>Skills Project</p>
             </a>
+            <!-- <a id="classes_latest" class="links_" href="#">
+                <p id="classes_">In Classes to Take</p>
+                <p>React Native Essentials</p>
+            </a> -->
+            <a class="see_all" href="#">See All +</a>
             
         </div>
     </main>
