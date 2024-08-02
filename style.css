@@ -22,8 +22,8 @@ img {
 }
 
 #blue_logo {
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.2em;
+    height: 1.2em;
     /* background-color: magenta; */
 }
 
@@ -66,23 +66,63 @@ main {
 }
 
 .links_ {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: normal;
 }
 
 /* Each list */
 #freelance_latest {
     color: darkgreen;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+#freelance_ {
+    /* background-color: darkgreen; */
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    /* color: #C4C4C4; */
+    color: darkgreen;
+    padding: .5em;
 }
 
 #deliverables_latest {
     color: darkblue;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+#deliverables_ {
+    /* background-color: darkgreen; */
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    /* color: #C4C4C4; */
+    color: darkblue;
+    padding: .5em;
 }
 
 #projects_latest {
     color: darkred;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+#projects_ {
+     /* background-color: darkgreen; */
+     background-color: #C4C4C4;
+     border-radius: 5px;
+     /* color: #C4C4C4; */
+     color: darkred;
+     padding: .5em;
 }
 
 #back_to_login {
-    color: cornflowerblue;
+    /* background-color: #C4C4C4; */
+    padding: 1em;
+    color: #080E2F;
+    color: #C4C4C4;
+    font-size: small;
+    font-weight: bold;
 }
