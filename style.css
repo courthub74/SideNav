@@ -4,212 +4,584 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* NAVBAR */
-nav {
-    background-color: #080E2F;
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
+@media screen and (min-width: 1200px) {
+    #mobile_nav {
+        display: none;
+    }
+    
+    /* NAVBAR */
+    #sidenav {
+        background-color: #080E2F;
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+    
+    #workflow_logo_nav {
+        width: 3em;
+        height: 3em;
+    }
+    
+    /* all the links and logos */
+    .links_section {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    
+    /* each link and logo */
+    .nav_link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+    }
+    /* nav logos */
+    img {
+        width: 2em;
+        height: 2em;
+    }
+    
+    #back_to_login {
+        /* background-color: #C4C4C4; */
+        padding: 1em;
+        /* border: 2px solid #ADC3D8; */
+        border-radius: 15px;
+        color: #ADC3D8;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    
+    #blue_logo {
+        width: 1em;
+        height: 1em;
+        /* background-color: magenta; */
+    }
+    
+    #sidenav, a {
+        color: #ADC3D8;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    main {
+        background-color: #ADC3D8;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .page_list {
+        /* border: 2px blue solid; */
+        height: 100vh;
+        /* width: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em; 
+    }
+    
+    header {
+        font-size: 2rem;
+    }
+    
+    #second_line {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .recents_ {
+        background-color: #C4C4C4;
+        font-size: 1.3rem;
+        padding: .5em 1em .5em 0;
+        color: #080E2F;
+    }
+    
+    .links_ {
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+    
+    /* Each Calendar */
+    #meeting_latest {
+        color: #1A3C62;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #meeting_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #1A3C62;
+        padding: .5em;
+    }
+    #deadline_latest {
+        color: #5C1111;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #deadline_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #5C1111;
+        padding: .5em;
+    }
+    #presentation_latest {
+        color: #484554;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #presentation_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #484554;
+        padding: .5em;
+    }
+    /* See All */
+    .see_all {
+        color: #080E2F;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    /* Each Task List */
+    #freelance_latest {
+        color: darkgreen;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #freelance_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkgreen;
+        padding: .5em;
+    }
+    
+    #deliverables_latest {
+        color: darkblue;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #deliverables_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkblue;
+        padding: .5em;
+    }
+    
+    #projects_latest {
+        color: darkred;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #projects_ {
+         /* background-color: darkgreen; */
+         color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: darkred;
+         padding: .5em;
+    }
+    
+    #classes_latest {
+        color: #9F7E1D;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #classes_ {
+        color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: #9F7E1D;
+         padding: .5em;
+    }
 }
 
-#workflow_logo_nav {
-    width: 3em;
-    height: 3em;
+/* IPad */
+@media screen and (min-width: 501px) and (max-width: 850px) and (orientation: portrait) {
+   
+
+    #mobile_nav {
+        background-color: #080E2F;
+        height: 7em;
+    }
+
+    #mobile_nav_elements {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
+
+    #workflow_logo_nav_mobile {
+        width: 3em;
+        height: 3em;
+    } 
+
+    #sidenav {
+        display: none;
+    }
+
+    main {
+        background-color: #ADC3D8;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        /* margin-top: -3em; */
+    }
+
+    .page_list {
+        /* border: 2px blue solid; */
+        height: 100vh;
+        /* width: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em; 
+        margin-top: -6em;
+    }
+    
+    header {
+        font-size: 2rem;
+    }
+
+    #blue_logo {
+        width: 1em;
+        height: 1em;
+        /* background-color: magenta; */
+    }
+    
+    #second_line {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .recents_ {
+        background-color: #C4C4C4;
+        font-size: 1.3rem;
+        padding: .5em 1em .5em 0;
+        color: #080E2F;
+    }
+    
+    .links_ {
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+    
+    /* Each Calendar */
+    #meeting_latest {
+        color: #1A3C62;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #meeting_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #1A3C62;
+        padding: .5em;
+    }
+    #deadline_latest {
+        color: #5C1111;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #deadline_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #5C1111;
+        padding: .5em;
+    }
+    #presentation_latest {
+        color: #484554;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #presentation_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #484554;
+        padding: .5em;
+    }
+    /* See All */
+    .see_all {
+        color: #080E2F;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    /* Each Task List */
+    #freelance_latest {
+        color: darkgreen;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #freelance_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkgreen;
+        padding: .5em;
+    }
+    
+    #deliverables_latest {
+        color: darkblue;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #deliverables_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkblue;
+        padding: .5em;
+    }
+    
+    #projects_latest {
+        color: darkred;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #projects_ {
+         /* background-color: darkgreen; */
+         color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: darkred;
+         padding: .5em;
+    }
+    
+    #classes_latest {
+        color: #9F7E1D;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #classes_ {
+        color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: #9F7E1D;
+         padding: .5em;
+    }
+
 }
 
-/* all the links and logos */
-.links_section {
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-}
+/* IPhone */
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    #mobile_nav {
+        background-color: #080E2F;
+        height: 7em;
+    }
 
-/* each link and logo */
-.nav_link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .5em;
-}
-/* nav logos */
-img {
-    width: 2em;
-    height: 2em;
-}
+    #mobile_nav_elements {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
 
-#back_to_login {
-    /* background-color: #C4C4C4; */
-    padding: 1em;
-    /* border: 2px solid #ADC3D8; */
-    border-radius: 15px;
-    color: #ADC3D8;
-    font-size: .8rem;
-    font-weight: bold;
-}
+    #workflow_logo_nav_mobile {
+        width: 3em;
+        height: 3em;
+    } 
 
-#blue_logo {
-    width: 1em;
-    height: 1em;
-    /* background-color: magenta; */
-}
+    #sidenav {
+        display: none;
+    }
 
-nav, a {
-    color: #ADC3D8;
-    text-decoration: none;
-    cursor: pointer;
-}
+    main {
+        background-color: #ADC3D8;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        /* margin-top: -3em; */
+    }
 
-main {
-    background-color: #ADC3D8;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    height: 100vh;
-}
+    .page_list {
+        /* border: 2px blue solid; */
+        height: 100vh;
+        /* width: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em; 
+        margin-top: 0em;
+    }
+    
+    header {
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.page_list {
-    /* border: 2px blue solid; */
-    height: 100vh;
-    /* width: 100vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2em; 
-}
-
-header {
-    font-size: 2rem;
-}
-
-#second_line {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.recents_ {
-    background-color: #C4C4C4;
-    font-size: 1.3rem;
-    padding: .5em 1em .5em 0;
-    color: #080E2F;
-}
-
-.links_ {
-    font-size: 1.1rem;
-    font-weight: normal;
-}
-
-/* Each Calendar */
-#meeting_latest {
-    color: #1A3C62;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-#meeting_ {
-    color: #C4C4C4;
-    border-radius: 5px;
-    background-color: #1A3C62;
-    padding: .5em;
-}
-#deadline_latest {
-    color: #5C1111;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-#deadline_ {
-    color: #C4C4C4;
-    border-radius: 5px;
-    background-color: #5C1111;
-    padding: .5em;
-}
-#presentation_latest {
-    color: #484554;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-#presentation_ {
-    color: #C4C4C4;
-    border-radius: 5px;
-    background-color: #484554;
-    padding: .5em;
-}
-/* See All */
-.see_all {
-    color: #080E2F;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* Each Task List */
-#freelance_latest {
-    color: darkgreen;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-#freelance_ {
-    /* background-color: darkgreen; */
-    color: #C4C4C4;
-    border-radius: 5px;
-    /* color: #C4C4C4; */
-    background-color: darkgreen;
-    padding: .5em;
-}
-
-#deliverables_latest {
-    color: darkblue;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-
-#deliverables_ {
-    /* background-color: darkgreen; */
-    color: #C4C4C4;
-    border-radius: 5px;
-    /* color: #C4C4C4; */
-    background-color: darkblue;
-    padding: .5em;
-}
-
-#projects_latest {
-    color: darkred;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-
-#projects_ {
-     /* background-color: darkgreen; */
-     color: #C4C4C4;
-     border-radius: 5px;
-     /* color: #C4C4C4; */
-     background-color: darkred;
-     padding: .5em;
-}
-
-#classes_latest {
-    color: #9F7E1D;
-    display: flex;
-    align-items: center;
-    gap: .5em;
-}
-
-#classes_ {
-    color: #C4C4C4;
-     border-radius: 5px;
-     /* color: #C4C4C4; */
-     background-color: #9F7E1D;
-     padding: .5em;
+    #blue_logo {
+        width: 1em;
+        height: 1em;
+        /* background-color: magenta; */
+    }
+    
+    #second_line {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .recents_ {
+        background-color: #C4C4C4;
+        font-size: 1.3rem;
+        padding: .5em 1em .5em 0;
+        color: #080E2F;
+    }
+    
+    .links_ {
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+    
+    /* Each Calendar */
+    #meeting_latest {
+        color: #1A3C62;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #meeting_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #1A3C62;
+        padding: .5em;
+    }
+    #deadline_latest {
+        color: #5C1111;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #deadline_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #5C1111;
+        padding: .5em;
+    }
+    #presentation_latest {
+        color: #484554;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #presentation_ {
+        color: #C4C4C4;
+        border-radius: 5px;
+        background-color: #484554;
+        padding: .5em;
+    }
+    /* See All */
+    .see_all {
+        color: #080E2F;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    /* Each Task List */
+    #freelance_latest {
+        color: darkgreen;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    #freelance_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkgreen;
+        padding: .5em;
+    }
+    
+    #deliverables_latest {
+        color: darkblue;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #deliverables_ {
+        /* background-color: darkgreen; */
+        color: #C4C4C4;
+        border-radius: 5px;
+        /* color: #C4C4C4; */
+        background-color: darkblue;
+        padding: .5em;
+    }
+    
+    #projects_latest {
+        color: darkred;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #projects_ {
+         /* background-color: darkgreen; */
+         color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: darkred;
+         padding: .5em;
+    }
+    
+    #classes_latest {
+        color: #9F7E1D;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+    
+    #classes_ {
+        color: #C4C4C4;
+         border-radius: 5px;
+         /* color: #C4C4C4; */
+         background-color: #9F7E1D;
+         padding: .5em;
+    }
 }
