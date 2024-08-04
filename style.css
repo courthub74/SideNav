@@ -80,14 +80,22 @@
     }
     
     .page_list {
-        /* border: 2px blue solid; */
+        border: 2px blue solid;
         height: 100vh;
         /* width: 100vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2em; 
+        /* align-items: center; */
+        gap: 1em; 
     }
+
+   /* Try styling the p tag a tags */
+   #schedules_ {
+        color: #080E2F;
+        font-weight: bold;
+    }
+
     
     header {
         font-size: 2rem;
@@ -110,6 +118,20 @@
         font-size: 1.1rem;
         font-weight: normal;
     }
+
+    /* New Appointments */
+    .schedules_ {
+        font-size: 1.1rem;   
+    }
+    .meeting_date {
+        color: #1A3C62;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .cal_event {
+        color: #1A3C62;
+        font-weight: bold;
+    }
     
     /* Each Calendar */
     #meeting_latest {
@@ -121,7 +143,10 @@
     #meeting_ {
         color: #C4C4C4;
         border-radius: 5px;
-        background-color: #1A3C62;
+        color: #1A3C62;
+        text-decoration: underline;
+        font-weight: bold;
+        /* background-color: #1A3C62; */
         padding: .5em;
     }
     #deadline_latest {
@@ -133,7 +158,10 @@
     #deadline_ {
         color: #C4C4C4;
         border-radius: 5px;
-        background-color: #5C1111;
+        color: #5C1111;
+        text-decoration: underline;
+        font-weight: bold;
+        /* background-color: #5C1111; */
         padding: .5em;
     }
     #presentation_latest {
@@ -145,7 +173,10 @@
     #presentation_ {
         color: #C4C4C4;
         border-radius: 5px;
-        background-color: #484554;
+        color: #484554;
+        text-decoration: underline;
+        font-weight: bold;
+        /* background-color: #484554; */
         padding: .5em;
     }
     /* See All */
@@ -166,10 +197,12 @@
     #freelance_ {
         /* background-color: darkgreen; */
         color: #C4C4C4;
+        color: darkgreen;
         border-radius: 5px;
-        /* color: #C4C4C4; */
-        background-color: darkgreen;
+        text-decoration: underline;
+        /* background-color: darkgreen; */
         padding: .5em;
+        font-weight: bold;
     }
     
     #deliverables_latest {
@@ -183,8 +216,10 @@
         /* background-color: darkgreen; */
         color: #C4C4C4;
         border-radius: 5px;
-        /* color: #C4C4C4; */
-        background-color: darkblue;
+        text-decoration: underline;
+        color: darkblue;
+        font-weight: bold;
+        /* background-color: darkblue; */
         padding: .5em;
     }
     
@@ -199,8 +234,10 @@
          /* background-color: darkgreen; */
          color: #C4C4C4;
          border-radius: 5px;
+         text-decoration: underline;
+         color: darkred;
+         font-weight: bold;
          /* color: #C4C4C4; */
-         background-color: darkred;
          padding: .5em;
     }
     
@@ -264,7 +301,7 @@
         gap: 2em; 
         margin-top: -6em;
     }
-    
+
     header {
         font-size: 2rem;
     }
