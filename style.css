@@ -69,6 +69,14 @@
         text-decoration: none;
         cursor: pointer;
     }
+
+    #mobile_menu {
+        display: none;
+    }
+
+    #phone_menu {
+        display: none;
+    }
     
     main {
         background-color: #ADC3D8;
@@ -210,7 +218,6 @@
 /* IPad */
 @media screen and (min-width: 501px) and (max-width: 850px) and (orientation: portrait) {
    
-
     #mobile_nav {
         background-color: #080E2F;
         height: 7em;
@@ -225,9 +232,31 @@
     #workflow_logo_nav_mobile {
         width: 3em;
         height: 3em;
-    } 
+    }
+    
+    /* Dropdown Menu */
+    #mobile_menu {
+        background-color: #1A3C62;
+        display: flex;
+        justify-content: right;
+        padding: 2em;
+        border-top: 1px solid #ADC3D8;
+    }
+
+    #mobile_menu_elements, a {
+        color: #ADC3D8;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        gap: 1em;
+    }
 
     #sidenav {
+        display: none;
+    }
+
+    #phone_menu {
         display: none;
     }
 
@@ -391,8 +420,49 @@
         height: 3em;
     } 
 
+       /* Dropdown Menu */
+       #mobile_menu {
+        display: none;
+    }
+
+    /* #mobile_menu_elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #mobile_menu_elements, a {
+        color: #ADC3D8;
+        font-size: .8rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        gap: .8em;
+        cursor: pointer;
+    } */
+
     #sidenav {
         display: none;
+    }
+    
+    #phone_menu {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: #080E2F;
+        border-top: 1px solid #ADC3D8;
+    }
+
+    #phone_menu, a {
+        color: #ADC3D8;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #phone_menu, #logout {
+        background-color: #1A3C62;
+        padding: 1em;
     }
 
     main {
@@ -453,7 +523,7 @@
         align-items: center;
         gap: .5em;
         /* border: #080E2F 2px solid; */
-        font-size: 1.2rem;
+        font-size: .9rem;
         /* font-weight: bold; */
     }
     

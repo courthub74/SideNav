@@ -114,7 +114,7 @@
     
 }
 
-/* Mobile */
+
 @media screen and (max-width: 500px) and (orientation: portrait) {
     body {
         background-color: #ADC3D8;
@@ -126,7 +126,6 @@
     
     main {
         background-color: #080433;
-        /* border: 2px solid white; */
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -135,7 +134,6 @@
         align-items: center;
     }
     
-    /* Top of the Login */
     #page_header {
         color: #ADC3D8;
         font-weight: bold;
@@ -151,7 +149,6 @@
     #workflow_logo {
         width: 1.5em;
         height: 1.5em;
-        /* background-color: green; */
     }
     
     form {
@@ -160,7 +157,6 @@
         flex-direction: column;
         gap: 2em;
         width: 85%;
-        /* background-color: darkgreen; */
     }
     
     .login_inputs_div {
@@ -172,7 +168,6 @@
     .input_label {
         color: #ADC3D8;
         font-size: 1.1rem;
-        /* font-weight: bold; */
         font-family: 'kanit', sans-serif;
     }
     
@@ -196,10 +191,8 @@
         color: #ADC3D8;
         border: 2px solid #ADC3D8;
         border-radius: 5px;
-        /* height: 2em; */
         padding: .6em 1em .6em 1em;
         margin-top: 1.5em;
-        /* font-size: 1.2rem; */
         cursor: pointer;
         text-align: center;
         text-decoration: none;
@@ -224,4 +217,105 @@
 }
 
 
+@media screen and (min-width: 501px) and (max-width: 850px) {
+    body {
+        background-color: #ADC3D8;
+        background-color: #080433;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        background-color: #080433;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4em;
+        align-items: center;
+    }
+    
+    #page_header {
+        color: #ADC3D8;
+        font-weight: bold;
+        font-size: 3rem;
+        /* font-size: 2.2rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .2em;
+        margin-bottom: 1em;
+        margin-top: -2em;
+    }
+    
+    #workflow_logo {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    
+    form {
+        margin: -1.2em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+    }
+    
+    .login_inputs_div {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .input_label {
+        color: #ADC3D8;
+        font-size: 1.1rem;
+        font-family: 'kanit', sans-serif;
+    }
+    
+    .input_field {
+        background-color: #ADC3D8;
+        border: none;
+        border-radius: 2px;
+        width: 100%;
+        padding: .7em 0em .7em 0em;
+        font-family: 'kanit', sans-serif;
+        font-size: 1.2rem;
+        color: #080433;
+        text-align: center;
+    }
+    .input_field:focus {
+        outline-style: none;
+    }
+    
+    #login_button {
+        background-color: #080433;
+        color: #ADC3D8;
+        border: 2px solid #ADC3D8;
+        border-radius: 5px;
+        padding: .6em 1em .6em 1em;
+        margin-top: 1.5em;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    #google_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5em;
+        background-color: #080433;
+        border: none;
+        color: #ADC3D8;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 2em;
+    }
+    
+    #google_img {
+        width: 5em;
+    } 
+} 
 
