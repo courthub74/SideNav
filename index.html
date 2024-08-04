@@ -51,6 +51,27 @@
             </div>
         </div>
      </div>
+     <!-- Dropdown -->
+      <div id="mobile_menu">
+        <div id="mobile_menu_elements">
+            <a href="#">Calendar</a>
+            <a href="#">Notes</a>
+            <a href="#">Tasks</a>
+            <a href="#">Contracts</a>
+            <a href="#">Payments</a>
+            <a href="./login.html">Logout</a>
+        </div>
+      </div>
+
+      <!-- Phone Menu -->
+       <div id="phone_menu">
+            <!-- <a href="#">Calendar</a>
+            <a href="#">Notes</a>
+            <a href="#">Tasks</a>
+            <a href="#">Contracts</a>
+            <a href="#">Payments</a> -->
+            <a id="logout_" href="./login.html">Logout</a>
+       </div>
 
     <main>
         <div class="page_list">
@@ -58,45 +79,52 @@
                 <p>    
                     <p><span id="logged_user">Courtney J</span> you have logged in to the</p>
                 </p>
-                <p id="second_line"><img id="blue_logo" src="./workflow_blue.png"> Workflow App</>
+                <p id="second_line"><img id="blue_logo" src="./workflow_blue.png"> Workflow App</p>
             </header>
 
             <!-- RECENT APPOINTMENTS -->
              <p class="recents_">Recent Appointments</p>
              <!-- Grab the latest from the calendar -->
-              <a id="meeting_latest" class="links_" href="#">
-                <p id="meeting_">Sept 8 2024</p>
-                <p>Glammory Meeting</p>
-              </a>
-              <a id="deadline_latest" class="links_" href="#">
-                <p id="deadline_">Oct 15 2024</p>
-                <p>Glammory Website</p>
-              </a>
-              <a id="presentation_latest" class="links_" href="#">
-                <p id="presentation_">Nov 23 2024</p>
-                <p>API Discussion</p>
-              </a>
+              <div class="list_item">
+                <a href="#" class="meeting_date meeting_color">Sept 8 2024</a>
+                <a href="#" class="cal_event meeting_color">Glammory Meeting</a>
+              </div>
+              
+              <div class="list_item">
+                <a href="#" class="meeting_date deadline_color">Oct 15 2024</a>
+                <a href="#" class="cal_event deadline_color">Glammory Website</a>
+              </div>
+
+              <div class="list_item">
+                <a href="#" class="meeting_date virtual_color">Nov 23 2024</a>
+                <a href="#" class="cal_event virtual_color">API Discussion</a>
+              </div>
+             
               <a class="see_all" href="#">See All +</a>
 
             <!-- RECENT TASKS -->
             <p class="recents_">Recent Tasks</p>
             <!-- Grab the latest from each todo List -->
-            <a id="freelance_latest" class="links_" href="#">
-                <p id="freelance_">In Freelance</p>
-                <p>MPS Website</p>
-            </a>
-            <a id="deliverables_latest" class="links_" href="#">
-                <p id="deliverables_">In Deliverables</p>
-                <P>Social media share buttons</P>
-            </a>
-            <a id="projects_latest" class="links_" href="#">
-                <p id="projects_">In Projects</p>
-                <p>Skills Project</p>
-            </a>
-            <!-- <a id="classes_latest" class="links_" href="#">
-                <p id="classes_">In Classes to Take</p>
-                <p>React Native Essentials</p>
-            </a> -->
+            <div class="list_item">
+                <a href="#" class="meeting_date freelance_color">In Freelance</a>
+                <a href="#" class="cal_event freelance_color">MPS Website</a>
+            </div>
+            
+            <div class="list_item">
+                <a href="#" class="meeting_date deliverable_color">In Deliverables</a>
+                <a href="#" class="cal_event deliverable_color">Social media share buttons</a>
+            </div>
+
+            <div class="list_item">
+                <a href="#" class="meeting_date project_color">In Projects</a>
+                <a href="#" class="cal_event project_color">Skills Project</a>
+            </div>
+
+            <div class="list_item">
+                <a href="#" class="meeting_date classtake_color">In Classes to Take</a>
+                <a href="#" class="cal_event classtake_color">AWS Essentials</a>
+            </div>
+
             <a class="see_all" href="#">See All +</a>
             
         </div>
