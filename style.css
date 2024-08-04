@@ -216,7 +216,7 @@
 }
 
 /* IPad */
-@media screen and (min-width: 501px) and (max-width: 850px) and (orientation: portrait) {
+@media screen and (min-width: 501px) and (max-width: 843px) and (orientation: portrait) {
    
     #mobile_nav {
         background-color: #080E2F;
@@ -606,5 +606,32 @@
         font-size: 1rem;
         font-weight: bold;
         text-decoration: underline;
+    }
+}
+
+/* Landscapes */
+@media screen and (min-width: 855px) and (max-width: 1199px) and (orientation: landscape) {
+    body {
+        background-color: #1A3C62;
+    }
+
+    #sidenav {
+        display: none;
+    }
+
+    #mobile_nav {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: none;
+    }
+
+    #phone_menu {
+        display: none;
+    }
+
+    main {
+        display: none;
     }
 }
