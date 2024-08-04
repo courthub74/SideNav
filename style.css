@@ -80,14 +80,14 @@
     }
     
     .page_list {
-        border: 2px blue solid;
+        /* border: 2px blue solid; */
         height: 100vh;
         /* width: 100vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         /* align-items: center; */
-        gap: 1em; 
+        gap: 1.5em; 
     }
 
    /* Try styling the p tag a tags */
@@ -96,9 +96,10 @@
         font-weight: bold;
     }
 
-    
     header {
         font-size: 2rem;
+        display: flex;
+        gap: .1em;
     }
     
     #second_line {
@@ -109,7 +110,7 @@
     
     .recents_ {
         background-color: #C4C4C4;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: .5em 1em .5em 0;
         color: #080E2F;
     }
@@ -119,51 +120,83 @@
         font-weight: normal;
     }
 
-    /* New Appointments */
-    .schedules_ {
-        font-size: 1.1rem;   
+    /* Appointment List Div */
+    .list_item {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        /* border: #080E2F 2px solid; */
+        font-size: 1.2rem;
+        /* font-weight: bold; */
     }
-    .meeting_date {
+
+    /* Every Thing in the list */
+
+    /* Meeting */
+    .meeting_date.meeting_color {
         color: #1A3C62;
-        font-weight: bold;
+        /* font-weight: bold; */
         text-decoration: underline;
     }
-    .cal_event {
+    .cal_event.meeting_color {
         color: #1A3C62;
-        font-weight: bold;
     }
+
     
-    /* Each Calendar */
-    #meeting_latest {
-        color: #1A3C62;
-        display: flex;
-        align-items: center;
-        gap: .5em;
-    }
-    #meeting_ {
-        color: #C4C4C4;
-        border-radius: 5px;
-        color: #1A3C62;
-        text-decoration: underline;
-        font-weight: bold;
-        /* background-color: #1A3C62; */
-        padding: .5em;
-    }
-    #deadline_latest {
-        color: #5C1111;
-        display: flex;
-        align-items: center;
-        gap: .5em;
-    }
-    #deadline_ {
-        color: #C4C4C4;
-        border-radius: 5px;
+    /* Deadline */
+    .meeting_date.deadline_color {
         color: #5C1111;
         text-decoration: underline;
-        font-weight: bold;
-        /* background-color: #5C1111; */
-        padding: .5em;
     }
+    .cal_event.deadline_color {
+        color: #5C1111;
+    }
+
+    /* Virtual */
+    .meeting_date.virtual_color {
+        color: #484554;
+        text-decoration: underline;
+    }
+    .cal_event.virtual_color {
+        color: #484554;
+    }
+
+    /* Freelance */
+    .meeting_date.freelance_color {
+        color: darkgreen;
+        text-decoration: underline;
+    }
+    .cal_event.freelance_color {
+        color: darkgreen;
+    }
+
+    /* Deliverables */
+    .meeting_date.deliverable_color {
+        color: darkblue;
+        text-decoration: underline;
+    }
+    .cal_event.deliverable_color {
+        color: darkblue;
+    }
+
+    /* Projects */
+    .meeting_date.project_color {
+        color: rgb(183, 26, 26);
+        text-decoration: underline;
+    }
+    .cal_event.project_color {
+        color: rgb(183, 26, 26);
+    }
+
+    /* Classes To Take */
+    .meeting_date.classtake_color {
+        color: rgb(143, 100, 19);
+        text-decoration: underline;
+    }
+    .cal_event.classtake_color {
+        color: rgb(143, 100, 19);
+    }
+
     #presentation_latest {
         color: #484554;
         display: flex;
